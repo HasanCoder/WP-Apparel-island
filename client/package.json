@@ -1,0 +1,63 @@
+{
+   "name": "tan-apparel",
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
+      "@headlessui/react": "^0.3.1",
+      "@popperjs/core": "^2.6.0",
+      "@tailwindcss/forms": "^0.2.1",
+      "@testing-library/jest-dom": "^5.11.8",
+      "@testing-library/react": "^11.2.3",
+      "@testing-library/user-event": "^12.6.0",
+      "axios": "^0.21.1",
+      "chart.js": "^2.9.4",
+      "date-fns": "^2.21.1",
+      "history": "^5.0.0",
+      "human-date": "^1.4.0",
+      "prop-types": "^15.7.2",
+      "pusher-js": "^7.0.3",
+      "react": "^17.0.2",
+      "react-countdown-circle-timer": "^2.5.0",
+      "react-date-range": "^1.1.3",
+      "react-dom": "^17.0.1",
+      "react-inlinesvg": "^2.2.2",
+      "react-router-dom": "^6.0.0-beta.0",
+      "react-scripts": "4.0.1",
+      "tailwindcss": "^2.0.2"
+   },
+   "proxy": "http://localhost:9000",
+   "scripts": {
+      "tailwind": "tailwind build src/tailwind/tailwind.css -o src/tailwind/tailwind.output.css",
+      "start": "react-scripts start",
+      "prebuild": "NODE_ENV=production npm run tailwind",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject"
+   },
+   "eslintConfig": {
+      "extends": [
+         "react-app",
+         "react-app/jest"
+      ]
+   },
+   "browserslist": {
+      "production": [
+         ">0.2%",
+         "not dead",
+         "not op_mini all"
+      ],
+      "development": [
+         "last 1 chrome version",
+         "last 1 firefox version",
+         "last 1 safari version"
+      ]
+   },
+   "devDependencies": {
+      "postcss": "^8.2.4",
+      "postcss-focus": "^5.0.1",
+      "stylelint-config-recommended": "^3.0.0"
+   },
+   "peerDependencies": {
+      "postcss": "^8.2.4"
+   }
+}
